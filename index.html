@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Anthony Binda</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<section class="showcase">
+	<header>
+		<h2 class="logo">Anthony Binda</h2>
+		<div class="toggle"></div>
+	</header>
+	<video src="particles.mp4" muted loop autoplay></video>
+	<div class="overlay"></div>
+	<div class="text">
+		<h2>I'm Anthony Binda.</h2>
+		</p>
+		<h3>Welcome to My Website!</h3>
+		<p>An aspiring Mathematician, Physicist, and Computer Scientist. Navigate through my website to discover more information
+			about me by clicking the button below.
+		</p>
+		<a href="#" id="explore">Explore</a>
+	</div>
+</section>
+<div class="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Projects</a></li>
+		<li><a href="#">Résumé</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</div>
+
+<script>
+	const menuToggle = document.querySelector('.toggle');
+  const showcase = document.querySelector('.showcase');
+  const exploreButton = document.getElementById('explore');
+
+  const openMenu = () => {
+    menuToggle.classList.toggle('active');
+    showcase.classList.toggle('active');
+  }
+  
+  menuToggle.addEventListener('click', openMenu);
+  exploreButton.addEventListener('click', openMenu);
+
+</script>
